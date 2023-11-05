@@ -7,7 +7,7 @@ import { ProductInfo } from "@/components/product-info"
 
 interface Props {
   params: {
-
+    slug: string
   }
 }
 
