@@ -26,6 +26,8 @@ export default async function Page({ searchParams }: Props) {
   const dateOrder = date ? `| order(_createdAt ${date})` : ""
   const order = `${priceOrder}${dateOrder}`
 
+  console.log(price)
+
   const productFilter = `_type == "product"`
   const colorFilter = color ? `&& "${color}" in colors` : ''
   const categoryFilter = category ? `&& "${category}" in categories` : ''

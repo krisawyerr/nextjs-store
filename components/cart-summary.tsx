@@ -13,6 +13,9 @@ export function CartSummary() {
   const totalAmount = totalPrice! + shippingAmount
   const isDisabled = isLoading || cartCount! === 0
 
+  const okoko = (JSON.stringify(cartDetails))
+  console.log(okoko.id)
+
   async function onCheckout() {
     setIsLoading(true)
     const response = await fetch('/api/checkout', {
